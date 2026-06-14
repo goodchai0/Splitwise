@@ -1,0 +1,169 @@
+.balance-selector {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: flex-end;
+}
+
+.balance-selector .form-group {
+  flex: 1;
+}
+
+.balance-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.summary-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+}
+
+.summary-card .amount {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.summary-owed {
+  background: linear-gradient(135deg, #fef5e7 0%, #fdebd0 100%);
+  color: #e67e22;
+}
+
+.summary-owing {
+  background: linear-gradient(135deg, #e8f8f5 0%, #d1f2eb 100%);
+  color: #27ae60;
+}
+
+.summary-net {
+  background: linear-gradient(135deg, #ebf5fb 0%, #d6eaf8 100%);
+  color: #3498db;
+}
+
+.summary-card .amount.positive {
+  color: #27ae60;
+}
+
+.summary-card .amount.negative {
+  color: #e74c3c;
+}
+
+.balance-summary.success {
+  grid-template-columns: 1fr;
+  background: linear-gradient(135deg, #d5f4e6 0%, #b9f3d0 100%);
+  color: #27ae60;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.balance-summary.success h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.balance-summary.success p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.balance-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.balance-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 4px solid;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.balance-item:hover {
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.balance-item.positive {
+  border-left-color: #27ae60;
+  background-color: #f0fdf4;
+}
+
+.balance-item.negative {
+  border-left-color: #e74c3c;
+  background-color: #fef2f2;
+}
+
+.balance-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.balance-icon {
+  font-size: 2rem;
+}
+
+.balance-user {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2d3748;
+}
+
+.balance-description {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.balance-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.balance-item.positive .balance-amount {
+  color: #27ae60;
+}
+
+.balance-item.negative .balance-amount {
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .balance-selector {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .balance-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-card .amount {
+    font-size: 1.5rem;
+  }
+
+  .balance-amount {
+    font-size: 1.25rem;
+  }
+}

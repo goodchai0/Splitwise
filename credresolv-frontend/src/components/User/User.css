@@ -1,0 +1,225 @@
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+.input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.input:disabled {
+  background-color: #f7fafc;
+  cursor: not-allowed;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button-primary {
+  background-color: #667eea;
+  color: white;
+}
+
+.button-primary:hover:not(:disabled) {
+  background-color: #5568d3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.button-danger {
+  background-color: #f56565;
+  color: white;
+}
+
+.button-danger:hover:not(:disabled) {
+  background-color: #e53e3e;
+}
+
+.button-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.error-message {
+  background-color: #fff5f5;
+  color: #c53030;
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 4px solid #f56565;
+  margin: 1rem 0;
+}
+
+.loading {
+  text-align: center;
+  color: #667eea;
+  font-size: 1.2rem;
+}
+
+.empty-state {
+  text-align: center;
+  color: #718096;
+  padding: 2rem;
+  font-style: italic;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.table th {
+  background-color: #f7fafc;
+  color: #2d3748;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table tbody tr:hover {
+  background-color: #f7fafc;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+/* Badges for split types */
+.badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-equal {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.badge-exact {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.badge-percentage {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+/* Table container for horizontal scroll on small screens */
+.table-container {
+  overflow-x: auto;
+}
+
+/* Table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #333;
+}
+
+.table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.button-small {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.button-danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.button-danger:hover {
+  background-color: #d32f2f;
+}
+.badge-success {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.badge-danger {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.badge-settled {
+  background-color: #f5f5f5;
+  color: #666;
+}
